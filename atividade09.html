@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade09</title>
+  </head>
+  <body>
+    <h1>Lista de exercícios com JavaScript</h1>
+    <p>
+      Escrever um algoritmo que calcule e mostre a média aritmética dos números
+      lidos entre 13 e 73.
+    </p>
+
+    <script>
+      let media = 0;
+      let num1 = prompt("Informe o primeiro número entre 13 e 73: ");
+      let num2 = prompt("Informe o segundo número entre 13 e 73: ");
+      let num3 = prompt("Informe o terceiro número entre 13 e 73: ");
+      if (num1 && num2 && num3 >= 13 && num1 && num2 && num3 <= 73) {
+        media = (num1 + num2 + num3) / 3;
+        console.log(
+          `A média aritmética entre ${num1}+${num2}+${num3} = ${media.toFixed(
+            2
+          )}`
+        );
+      } else {
+        alert("Informe números entre 13 e 73 ! ");
+      }
+    </script>
+  </body>
+</html>
