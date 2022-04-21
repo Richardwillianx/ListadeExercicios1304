@@ -19,16 +19,22 @@
 
     <script>
       const turno = prompt(
-        "Informe em quanto turno você estuda, sendo M para matutino ou V para vespertino ou N para noturno: "
-      ).toUpperCase;
+        "Informe em qual turno você estuda, sendo M para matutino ou V para vespertino ou N para noturno: "
+      ).toUpperCase();
 
       switch (turno) {
-        case "m":
-          console.log("Você estuda no turno MATUTINO");
-        case "v":
-          console.log("Você estuda no turno VESPERTINO");
-        case "n":
-          console.log("Você estuda no turno NOTURNO");
+        case "M":
+          console.log("Bom dia, você estuda no turno MATUTINO.");
+          break;
+        case "V":
+          console.log("Boa tarde, você estuda no turno VESPERTINO.");
+          break;
+        case "N":
+          console.log("Boa noite, você estuda no turno NOTURNO.bb");
+          break;
+        default:
+          alert("valor inválido!");
+          break;
       }
     </script>
   </body>

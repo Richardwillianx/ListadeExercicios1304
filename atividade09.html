@@ -14,7 +14,7 @@
     </p>
 
     <script>
-      let media = 0;
+      /*    let media = 0;
       let num1 = prompt("Informe o primeiro número entre 13 e 73: ");
       let num2 = prompt("Informe o segundo número entre 13 e 73: ");
       let num3 = prompt("Informe o terceiro número entre 13 e 73: ");
@@ -27,7 +27,22 @@
         );
       } else {
         alert("Informe números entre 13 e 73 ! ");
+      } */
+
+      let soma = 0;
+      let quantidadeNumeros = 0;
+      let mediaAritmetica = 0.0;
+
+      for (let i = 13; i <= 73; i++) {
+        //console.log(i);
+        soma += i;
+        quantidadeNumeros++;
       }
+
+      mediaAritmetica = soma / quantidadeNumeros;
+      alert(
+        `A média dos números entre 13 e 73 é ${mediaAritmetica.toFixed(2)}`
+      );
     </script>
   </body>
 </html>

@@ -13,11 +13,26 @@
       tabuada de 1 a 10 do valor lido.
     </p>
     <script>
-      let contador = 0;
+      /*   let contador = 0;
       let valor = parseInt(prompt("Informe um número de 1 a 10: "));
       for (contador = valor; contador <= 10; contador++) {
         const resultado = tabuada * contador;
         console.log(` ${tabuada} * ${contador} = ${resultado}`);
+      } */
+
+      let numero = Number(
+        window.prompt("Digite o número para gerar a tabuada: ")
+      );
+
+      if (numero >= 1 && numero <= 10) {
+        for (let i = 1; i <= 10; i++) {
+          alert(`${numero} x ${i} = ${numero * i}`);
+          console.log(`${numero} x ${i} = ${numero * i}`);
+        }
+      } else {
+        alert(
+          "Erro, valor digitado inválido. Por favor, digite algum número entre 1 e 10."
+        );
       }
     </script>
   </body>

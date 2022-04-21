@@ -13,7 +13,7 @@
     </p>
 
     <script>
-      let ePrimo = true;
+      /*  let ePrimo = true;
       let num = prompt("Informe um número: ");
 
       for (let i = 2; i < num / 2; i++) {
@@ -26,6 +26,20 @@
         console.log(`${num} é um número primo`);
       } else {
         console.log(`${num} NÃO é um número primo`);
+      } */
+
+      let numero = Number(window.prompt("Digite um número: "));
+      let quantidadeDivisor = 0;
+
+      for (let controlador = 2; controle < numero; controlador++) {
+        if (numero % controle === 0) {
+          quantidadeDivisor++;
+        }
+      }
+      if (quantidadeDivisor === 0) {
+        window.alert(`Ò número ${numero} é PRIMO`);
+      } else {
+        window.alert(`O número ${numero} NÃO é PRIMO`);
       }
     </script>
   </body>

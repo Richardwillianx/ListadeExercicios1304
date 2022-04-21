@@ -14,9 +14,23 @@
     </p>
 
     <script>
-      while (num <= 500) {
+      /* while (num <= 500) {
         num *= 3;
         console.log(num);
+      } */
+
+      let numero = Number(window.prompt("Digite um número: "));
+      let controle = 0;
+
+      //controle = 100
+
+      while (controle + numero * 3 < 500) {
+        // testa e garante que o próximo valor atribuido à variavel controle será menor que 500
+        alert(`O resultado de ${controle} + ${numero * 3} é`);
+
+        controle += numero * 3; // 100 * 3 = 300 | 300 * 3 = 900
+
+        alert(`${controle}`);
       }
     </script>
   </body>

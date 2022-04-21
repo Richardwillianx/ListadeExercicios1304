@@ -16,11 +16,11 @@
     </p>
 
     <script>
-      const salario = prompt("Informe seu salário: R$ ");
-      if (salario <= 1904) {
-        console.log("você está ISENTO DE IR");
+      let salario = parseFloat(prompt("Informe seu salário: R$ "));
+      if (salario < 1903.98) {
+        window.alert("você está ISENTO DE IR");
       } else {
-        console.log("Você foi tributado no IR");
+        window.alert("Você foi tributado no IR");
       }
     </script>
   </body>

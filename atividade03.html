@@ -19,19 +19,40 @@
     </p>
 
     <script>
-      let altura = parseFloat(prompt("Informe a sua altura: "));
-      let sexo = parseInt(prompt("Informe seu sexo(1 - Homen | 2 - Mulher): "));
+      /*   let altura = parseFloat(prompt("Informe a sua altura: "));
+      let sexo = parseInt(prompt("Informe seu sexo(1 - Feminino | 2 - Masculino): "));
       let pesoIdealH = 0;
       let pesoIdealM = 0;
 
       if (sexo === 1) {
-        pesoIdealH = 72.7 * altura - 58.0;
+        pesoIdealH = (72.7 * altura) - 58.0;
         console.log(`Seu peso ideal é ${pesoIdealH.toFixed(2)}.`);
       } else if (sexo === 2) {
-        pesoIdealM = 62.1 * altura - 44.7;
+        pesoIdealM = (62.1 * altura) - 44.7;
         console.log(`Seu peso ideal é ${pesoIdealM.toFixed(2)}.`);
       } else {
         alert("Digite 1 para Homem ou 2 para Mulher!");
+      } */
+
+      let sexo = Number(
+        prompt("Digite o sexo da pessoa: \n1 - Masculino \n2 - Feminino")
+      );
+      let altura;
+      let pesoIdeal;
+
+      if (sexo === 1) {
+        //Lógica e calcúlo para sexo Feminino
+        altura = parseFloat(prompt("Digite a sua altura: "));
+        pesoIdeal = 62.1 * altura - 44.7;
+        alert(`Seu peso ideal é ${pesoIdeal.toFixed(2)}Kg.`);
+      } else if (sexo === 2) {
+        //Lógica e cálculo para sexo Masculino
+        altura = parseFloat(prompt("Digite a sua altura: "));
+        pesoIdeal = 72.7 * altura - 58.0;
+        alert(`Seu peso ideal é ${pesoIdeal.toFixed(2)}Kg.`);
+      } else {
+        // Caso não seja digitado o número correto.
+        alert("Digito inválido. \n Digite 1 para Homem ou 2 para Mulher!");
       }
     </script>
   </body>
